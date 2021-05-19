@@ -10,3 +10,7 @@ This is a training app from [Udemy course](https://www.udemy.com/course/spring-h
 - Add users, passwords and roles (inMemory auth first and drop in database later)
 
 ### Custom Login Form 
+
+- Rename Context Roots. Properties -> Web Project Settings -> Context root, then your application will be run on path: http://localhost:8080/Context root.
+
+- Testing with a new private window(Incognito in Chrome). User login is based on a web browser session so they'll automatically be logged in once the session is running. (Only an issue for dev and testing)
