@@ -15,4 +15,8 @@ This is a training app from [Udemy course](https://www.udemy.com/course/spring-h
 
 - **Testing with a new private window(Incognito in Chrome).** User login is based on a web browser session so they'll automatically be logged in once the session is running. (Only an issue for dev and testing)
 
-- **Custom Login Form.** Modifying configuration, configure(HttpSecurity) -> Develop LoginController -> login form in JSP file (Send data to /authenticateTheUser), <form:form>, and use Context Path -> 
+- **Custom Login Form.** Modifying configuration, configure(HttpSecurity) -> Develop LoginController -> Login form in JSP file (Send data to /authenticateTheUser), use SpringMVC form tag, and Context Path -> Add Error Message(append error parameter to URL with help of jstl).
+
+### Bootstrap CSS Login Form
+
+- 
