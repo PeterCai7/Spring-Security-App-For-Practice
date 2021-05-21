@@ -1,5 +1,5 @@
 # Spring Security App For Practice
-This is a training app from [Udemy course](https://www.udemy.com/course/spring-hibernate-tutorial/) on Spring Security
+This is a training exercise from [Udemy course](https://www.udemy.com/course/spring-hibernate-tutorial/) on Spring Security
 
 ### Basic Security steps
 
