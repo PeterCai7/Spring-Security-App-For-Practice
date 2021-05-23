@@ -19,4 +19,27 @@ This is a training exercise from [Udemy course](https://www.udemy.com/course/spr
 
 ### Bootstrap CSS Login Form
 
-- 
+- Bootstrap is a web front end Frame work: [Here](https://www.w3schools.com/bootstrap/) is a good tutorial. [Official documentation.](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
+
+- How to add local CSS file for Spring Security Login Form? You have to configure Spring Security of allow unauthenticated requests to "/css" directory. And Configure the all Java config to serve content from "/css" directory(implement the WebMvcConfigurer Interface).
+
+### Logout Support
+
+- Add Logout support to Spring Security Configuration, using defualt URL /logout.
+
+- Logout button for sending data to /logout, which will be handled by Spring Security Filters.
+
+- Checke the logout parameter appended by Spring Security and display some message
+
+### Cross Site Request Forgery
+
+-
+
+
+### Restrict Access Based On Roles
+
+### Database Authentication
+
+### Password Encryption
+
+

@@ -1,3 +1,5 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,8 +11,15 @@
 <body>
 	<h2>Home Page</h2>
 	<hr>
+	<p>
+		Welcome to the Peter's Spring Security home page
+	</p>
 	
-	Welcome to the Peter's Spring Security home page
+	<!-- Add a logout button -->
+	<form:form action="${pageContext.request.contextPath}/logout" 
+		method="POST">
+		<input type="submit" value="Logout"/>
+	</form:form>
 	
 </body>
 </html>
