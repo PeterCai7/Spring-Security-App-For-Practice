@@ -10,4 +10,16 @@ public class DemoController {
 	public String showHome() {
 		return "home"; // connected to viewResolver, gonna be /WEB-INF/view/home.jsp
 	}
+	
+	//request mapping for /leaders
+	@GetMapping("/leaders")
+	public String showLeaders() {
+		return "leaders";
+	}
+	
+	//for systems admin
+	@GetMapping("/systems")
+	public String showSystems() {
+		return "systems";
+	}
 }
