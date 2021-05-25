@@ -11,7 +11,7 @@ This is a training exercise from [Udemy course](https://www.udemy.com/course/spr
 
 ### Custom Login Form 
 
-- **Rename Context Roots.** Properties -> Web Project Settings -> Context root, then your application will be run on path: http://localhost:8080/Context root.
+- **Rename Context Roots.** Properties -> Web Project Settings -> Context root, then your application will be run on path: localURL:PortNum/Context root.
 
 - **Testing with a new private window(Incognito in Chrome).** User login is based on a web browser session so they'll automatically be logged in once the session is running. (Only an issue for dev and testing)
 
@@ -33,13 +33,44 @@ This is a training exercise from [Udemy course](https://www.udemy.com/course/spr
 
 ### Cross Site Request Forgery
 
--
+- Spring MVC Form provides automatic support for security defenses.
+
+- What is CSRF? A security attack where an evil website tricks you into executing an action on a web application that you are currently logged in.
+
+- CSRF Protection: Embed additional token into HTML forms. Spring MVC form tag adds token automatically along with a session cookie for you.
+
+- Spring Security filter handles this by default.
+
+- Reference: [CSRF Security Reference](https://owasp.org/www-community/attacks/csrf), [Spring Security Support](https://docs.spring.io/spring-security/site/docs/current/reference/html5/#csrf)
 
 
 ### Restrict Access Based On Roles
 
+- Display User ID and Roles: Spring Security Tag Library, security:authenication tag.
+
+- Supporting Controller code and View Pages.
+
+- Add restrict configuration: antmatch().hasrole()
+
+- Customize "Access Denied" Page.
+
+- Display content based on Roles. Using security:authorize tag. Protected content is not hidden so users cannot backdoor it.
+
+
 ### Database Authentication
 
+- **Exciting Feature:** Spring Security can read user account info from database; We have to follow Spring Security's predefined table schemas by default; What's more: it also includes JDBC code to read info. 
+
+- **Development Process:** 1.SQL scripts to set up database tables; 2.Add database support to Maven POM file. 3.JDBC Properties File. 4.Define DataSource in Spring Configuration. 5.Update Spring Security Configuration to use JDBC.
+
+- 
+
 ### Password Encryption
+
+
+
+
+
+
 
 
