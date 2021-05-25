@@ -63,9 +63,17 @@ This is a training exercise from [Udemy course](https://www.udemy.com/course/spr
 
 - **Development Process:** 1.SQL scripts to set up database tables; 2.Add database support to Maven POM file. 3.JDBC Properties File. 4.Define DataSource in Spring Configuration. 5.Update Spring Security Configuration to use JDBC.
 
-- 
-
 ### Password Encryption
+
+- Spring Security recommends using the popular bcrypt algorithm (one-way encrypted hashing with random salting) which means encrypted password is never decrypted. Additional Information: [why-bcrypt](https://danboterhoven.medium.com/why-you-should-use-bcrypt-to-hash-passwords-af330100b861), [detailed algorithm analysis](https://en.wikipedia.org/wiki/Bcrypt), [Password hashing - best practices](https://crackstation.net/hashing-security.html).
+
+- Development Process: 1. Modify DDL for password field(8 + 60 characters) and update encrypted passwords({id}password). 2. Update JDBC configure properties.
+
+
+### Bonus
+
+[Custom Table Schema And User registration](https://www.udemy.com/course/spring-hibernate-tutorial/learn/lecture/9552122#overview), [Add to CRM App](https://www.udemy.com/course/spring-hibernate-tutorial/learn/lecture/9060648#overview), [Public Landing Page](https://www.udemy.com/course/spring-hibernate-tutorial/learn/lecture/23616514#overview)
+
 
 
 
